@@ -1,0 +1,21 @@
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+*{
+    text-decoration: none;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.header nav .navbar-nav .nav-item a{
+    text-decoration: none;
+    color: #3c4144;
+}
+.header nav .navbar-nav .nav-item a:hover{
+    color:#E54220;
+}

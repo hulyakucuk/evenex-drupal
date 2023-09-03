@@ -1,0 +1,70 @@
+{#
+/**
+ * @file
+ * Theme override to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+
+     <nav class="navbar navbar-expand-lg mx-auto py-4">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+<div class="collapse navbar-collapse ms-5 d-lg-flex " id="navbarSupportedContent">
+
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see https://twig.symfony.com/doc/3.x/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% if menu_level == 0 %}
+      <ul{{ attributes.addClass('navbar-nav  mb-lg-0 fs-6 me-4') }}>
+    {% else %}
+      <ul>
+    {% endif %}
+
+    
+    {% for item in items %}
+      <li{{ item.attributes.addClass('nav-item fw-medium') }}>
+        {{ link(item.title, item.url) }}
+        {% if item.below %}
+          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}
+
+   <form role="search" method="get" class="evenex-search" action="#">
+                    <button type="submit" class="search-submit border-0 bg-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="search" id="evenex-search" class="p-2 search-field evenex-search-field border-0" placeholder="Search..." value="" name="s">
+                    </form>
+                <div class="buttons">
+                <a type="button me-0" class="btn bg-warning px-4">Log In</a>
+                <a type="button" class="btn bg-danger px-4 "> Register</a>
+                </div>
+                
+</div>
+</div>
+</nav>

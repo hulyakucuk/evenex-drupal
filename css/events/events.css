@@ -1,0 +1,106 @@
+.page-title-wrapper .banner {
+  object-fit: cover;
+  object-position: center;
+  max-height: 325px;
+}
+
+.img-event {
+  background-image: url("/drupal/drupal-10.0.0/sites/default/files/2023-08/event-image-02-e16135444627686.jpg");
+  min-height: 230px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.media img {
+  width: 220px;
+  border-radius: 10px;
+  height: 180px;
+}
+
+.page-event-content {
+  transform: translateY(-200px);
+}
+.page-event-content .event-date::before {
+  content: "";
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNS40IiB2aWV3Qm94PSIwIDAgMTQgMTUuNCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUgLTQuMykiPjxyZWN0IHdpZHRoPSIxMi42IiBoZWlnaHQ9IjEyLjYiIHJ4PSIxLjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuNyA2LjQpIiBmaWxsPSJub25lIiBzdHJva2U9IiNlNTQyMjAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48bGluZSB5Mj0iMi44IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNC44IDUpIiBmaWxsPSJub25lIiBzdHJva2U9IiNlNTQyMjAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjQiLz48bGluZSB5Mj0iMi44IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5LjIgNSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2U1NDIyMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNCIvPjxsaW5lIHgyPSIxMi42IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjcgMTAuNikiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2U1NDIyMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNCIvPjwvZz48L3N2Zz4=);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: -5px;
+  position: relative;
+  background-position: center;
+  vertical-align: top;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+}
+.page-event-content .event-location::before {
+  content: "";
+  background-image: url(https://demo.xpeedstudio.com/evenex/multi-event/wp-content/themes/evenex/assets/images/map_icon.svg);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: -5px;
+  position: relative;
+  background-position: center;
+  vertical-align: top;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+}
+.page-event-content .event-category::before {
+  content: "";
+  background-image: url(https://demo.xpeedstudio.com/evenex/multi-event/wp-content/themes/evenex/assets/images/category_icon.svg);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: -5px;
+  position: relative;
+  background-position: center;
+  vertical-align: top;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+}
+.page-event-content .event-price::before {
+  content: "";
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgaWQ9InNhbGUtdGFnIj48cGF0aCBmaWxsPSIjMjYzMjM4IiBkPSJNMjAuMzMyIDMwLjYwMWMtLjM4NCAwLS43NjktLjE0Ni0xLjA2MS0uNDM4TDUuNjQzIDE2LjUzM2MtLjQ4Mi0uNDgyLS44NDItMS4zOTUtLjgxOS0yLjA3NmwuMjg1LTguMjU1YTEuNTk1IDEuNTk1IDAgMCAxIDEuNTE3LTEuNTE2bDEuNzczLS4wNTNjLjI2NCAwIC41MDcuMjA3LjUxNy40ODNhLjUwMi41MDIgMCAwIDEtLjQ4Mi41MThsLTEuNzc1LjA1M2EuNTk1LjU5NSAwIDAgMC0uNTUxLjU1bC0uMjg1IDguMjU1Yy0uMDEzLjQwOC4yMzggMS4wNDUuNTI3IDEuMzM0bDEzLjYyOSAxMy42MjlhLjUuNSAwIDAgMCAuNzA3IDBsOS4xOTItOS4xOTNjLjA5NC0uMDk0LjE0Ni0uMjE5LjE0Ni0uMzU0cy0uMDUyLS4yNi0uMTQ2LS4zNTRMMTYuMjUgNS45MjhjLS4yODktLjI4OS0uOTA3LS41NzEtMS4zMzYtLjUyNmwtMy45MzguMTM2Yy0uMjkyLS4wMTctLjUwOC0uMjA3LS41MTgtLjQ4MmEuNTAyLjUwMiAwIDAgMSAuNDgyLS41MThsMy45MzktLjEzNmMuNjk1LjAwMiAxLjU5NS4zMzcgMi4wNzcuODE5bDEzLjYyOCAxMy42MjdjLjI4Mi4yODIuNDM4LjY1OS40MzggMS4wNjFzLS4xNTYuNzc4LS40MzggMS4wNjFsLTkuMTkyIDkuMTkzYTEuNDk3IDEuNDk3IDAgMCAxLTEuMDYuNDM4eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMyNjMyMzgiIGQ9Ik0xMSAxMy40NzdjLTEuNjU0IDAtMy0xLjM0Ni0zLTMgMC0xLjA2NS41NTQtMi4wMjggMS40OC0yLjU3N2EuNS41IDAgMSAxIC41MS44NjJBMS45OCAxLjk4IDAgMCAwIDkgMTAuNDc3YzAgMS4xMDMuODk3IDIgMiAyczItLjg5NyAyLTJjMC0uOTIxLS42My0xLjcxNi0xLjUzMi0xLjkzM2EuNS41IDAgMSAxIC4yMzUtLjk3M0EyLjk4NCAyLjk4NCAwIDAgMSAxNCAxMC40NzdjMCAxLjY1NC0xLjM0NiAzLTMgM3ptNC43NzEgMy41ODdjLS4yNzYuMjgyLS41ODcuNDUtLjkzNi40OThhMS4wOTMgMS4wOTMgMCAwIDEtLjctLjEzMSAxLjY0NSAxLjY0NSAwIDAgMS0uMzgxLS4yOWMtLjIzNi0uMjM5LS4zNzUtLjQ5NC0uNDEzLS43NjZhMS4zODcgMS4zODcgMCAwIDEgLjA4My0uNzAxIDIuMjEgMi4yMSAwIDAgMSAuNDM2LS43MDFsLjIzOS4yMDhjLjIwOC4xOC4yNTYuNTE2LjEwNi43NDcgMCAwLS4wNDUuMDY5LS4wNTEuMjcyYS40MzMuNDMzIDAgMCAwIC4xMzcuMzYzYy4xMzcuMTI5LjMwOC4xNjguNTEzLjEyYS42NjYuNjY2IDAgMCAwIC4zMjUtLjIwNWMuMTY3LS4xNjYuMjU4LS40MDYuMjcxLS43MjJsLS4wMjctMS4wNDhjLS4wMDctLjM5NS4wMjQtLjcxMi4wOTYtLjk0OC4wODQtLjI2MS4yMjYtLjQ5Ni40MjktLjY5OS4zNjUtLjM2Mi43NjUtLjUxOSAxLjE5OC0uNDYuMjY1LjAzNy41MS4xNy43MzMuMzk0LjIxNi4yMTYuMzUyLjQ0OC40MS42OTcuMDQ0LjE5NS4wMzYuMzk2LS4wMjQuNjA0YTEuNjYgMS42NiAwIDAgMS0uMzMyLjU5OGwtLjI3My0uMTg5Yy0uMjI3LS4xNTctLjMwOS0uNDQ1LS4xODMtLjY0MWwuMDE1LS4xN2MuMDExLS4xMjItLjAzNi0uMjM0LS4xNDItLjMzOGEuMzgyLjM4MiAwIDAgMC0uMzk3LS4xMDUuNzYxLjc2MSAwIDAgMC0uMzY1LjIyNGMtLjE4NS4xODMtLjI5My40NDgtLjMyNC43OTctLjAxMy4xMzMtLjAwOS4zMDcuMDEzLjUyNC4wMjIuMjU4LjAzMy40MzQuMDMyLjUyNWEyLjkwMyAyLjkwMyAwIDAgMS0uMDk3Ljc4OCAyLjUyOSAyLjUyOSAwIDAgMS0uMDk1LjI4IDEuNjA4IDEuNjA4IDAgMCAxLS4yOTYuNDc1em0xLjUzNSAxLjY4OWMtLjE3NC0uMTc0LS40OTgtLjE4NC0uNzIxLS4wMjJsLS4yNTkuMTg4Yy0uMjIzLjE2MS0uNTQ3LjE1MS0uNzIxLS4wMjEtLjE3My0uMTczLS4xMzEtLjQ0NC4wOTQtLjYwNGwzLjg3Ni0yLjc1MWEuNjE3LjYxNyAwIDAgMSAuNzYyLjA2NGwuMTI1LjEyNGEuNjE0LjYxNCAwIDAgMSAuMDYzLjc2MWwtMi43NTggMy44NjhjLS4xNTkuMjI0LS40MzQuMjY1LS42MDguMDlzLS4xODYtLjQ5OS0uMDIyLS43MjFsLjE4OC0uMjU4Yy4xNjMtLjIyMS4xNTQtLjU0NC0uMDE5LS43MTh6bTEuODcxLTEuNzY5Yy4xNjYtLjIyLjEyMS0uMjY0LS4wOTktLjA5OWwtMS4wMDYuNzU2Yy0uMjIuMTY1LS4yOTkuNDAxLS4xNzYuNTI0LjEyNC4xMjQuMzU5LjA0NS41MjUtLjE3NWwuNzU2LTEuMDA2em0uOTMgNS44MTNjLS4xNjYuMTY1LS40NjEuMTQyLS42NTUtLjA1M2wtLjk0LS45NDJhLjUwMi41MDIgMCAwIDEgMC0uNzA3bDMuMzAzLTMuMzA0Yy4xOTQtLjE5NC40OS0uMjE3LjY1Ni0uMDUxLjE2Ni4xNjcuMTQ0LjQ2My0uMDUxLjY1N2wtMi43MDIgMi43MDFhLjUwMi41MDIgMCAwIDAgMCAuNzA3bC4zMzcuMzM3Yy4xOTQuMTk1LjIxNy40OS4wNTIuNjU1em0uNjQgMS4yNDFhLjUwMi41MDIgMCAwIDEgMC0uNzA3bDMuMzA2LTMuMzA4YS41MDIuNTAyIDAgMCAxIC43MDcgMGwxLjAxNiAxLjAxNWMuMTk0LjE5NC4yMTcuNDkuMDQ5LjY1Ny0uMTY3LjE2OC0uNDYzLjE0Ni0uNjU3LS4wNDlsLS40MS0uNDA5YS41MDIuNTAyIDAgMCAwLS43MDcgMGwtLjM4Ny4zODZhLjUwNC41MDQgMCAwIDAtLjAwMS43MDhsLjExLjEwOWMuMTkzLjE5NS4yMTYuNDkxLjA0OC42NTgtLjE2Ny4xNjctLjQ2My4xNDUtLjY1Ny0uMDVsLS4xMDktLjEwOGEuNTAyLjUwMiAwIDAgMC0uNzA3IDBsLS4zODcuMzg3YS41MDIuNTAyIDAgMCAwIDAgLjcwN2wuNDEuNDExYy4xOTQuMTk0LjIxNy40OS4wNDkuNjU3cy0uNDY0LjE0NS0uNjU4LS4wNWwtMS4wMTUtMS4wMTR6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzI2MzIzOCIgZD0iTTguODQgMTEuNjk5YS41LjUgMCAwIDEtLjE0Ni0uOTc4IDMuMDY4IDMuMDY4IDAgMCAwIDEuMjk0LS43NjhjMS41MDItMS41MDMgMS4xNDktNC4yOTktLjc4Ni02LjIzNC0uOTUxLS45NTItMi4xMzYtMS41NTItMy4zMzUtMS42ODctMS4xNTUtLjEzMi0yLjE4NS4xODktMi44OTguOTAyLTEuNTAxIDEuNTAyLTEuMTQ5IDQuMjk4Ljc4NiA2LjIzMy4wNjQuMDY0LjEzLjEyOC4xOTYuMTg5YS40OTkuNDk5IDAgMSAxLS42NzYuNzM2Yy0uMDc4LS4wNzEtLjE1My0uMTQ1LS4yMjgtLjIxOUMuNzI0IDcuNTUuMzcgNC4xMTkgMi4yNjIgMi4yMjdjLjkzLS45MzMgMi4yNDgtMS4zNTYgMy43MTctMS4xODkgMS40MjQuMTYxIDIuODIuODYyIDMuOTMgMS45NzQgMi4zMjUgMi4zMjUgMi42NzggNS43NTYuNzg2IDcuNjQ4YTQuMDg0IDQuMDg0IDAgMCAxLTEuNzEgMS4wMTguNTE5LjUxOSAwIDAgMS0uMTQ1LjAyMXoiPjwvcGF0aD48L3N2Zz4=);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color: #E54220;
+  margin-left: -5px;
+  position: relative;
+  background-position: center;
+  vertical-align: top;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+}
+.page-event-content .event-limit::before {
+  content: "";
+  background-image: url(https://demo.xpeedstudio.com/evenex/multi-event/wp-content/themes/evenex/assets/images/map_icon.svg);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: -5px;
+  position: relative;
+  background-position: center;
+  vertical-align: top;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+}
+.page-event-content .event-organizer::before {
+  content: "";
+  background-image: url(https://demo.xpeedstudio.com/evenex/multi-event/wp-content/themes/evenex/assets/images/user_icon.svg);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: -5px;
+  position: relative;
+  background-position: center;
+  vertical-align: top;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=events.css.map */
